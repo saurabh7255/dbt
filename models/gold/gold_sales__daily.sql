@@ -1,3 +1,10 @@
+
+{{
+    config(
+        materialized='view'
+    )
+}}
+
 SELECT
     o.order_date,
     u.city,
