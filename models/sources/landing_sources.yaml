@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: landing
+    database: hive_metastore  
+    schema: landing  
+    tables:
+      - name: orders
+        # freshness:
+        #   warn_after:
+        #     count: 200
+        #     period: day
+        #   error_after:
+        #     count: 365
+        #     period: day
+        # loaded_at_field: created_at
+      - name: users
+      - name: products
+      - name: reviews
